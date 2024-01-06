@@ -1,0 +1,49 @@
+{
+    "general" : [
+        "video",
+        "sağlık",
+        "inşallah",
+        "spor",
+        "teknoloji",
+        "ekonomi",
+        "eğitim",
+        "bilim",
+        "sanat",
+        "müzik",
+        "sinema",
+        "dizi",
+        "magazin",
+        "otomobil",
+        "moda",
+        "yaşam",
+        "seyahat",
+        "yemek",
+        "tarih",
+        "edebiyat",
+        "dünya",
+        "türkiye",
+        "politika",
+        "gündem",
+        "sosyal medya",
+        "kültür",
+        "felsefe",
+        "psikoloji",
+        "sosyoloji",
+        "fizik",
+        "kimya",
+        "biyoloji",
+        "matematik",
+        "insan"
+    ],
+    "badWords":[
+        "aptal",
+        "salak",
+        "gerizekalı",
+        "saf"
+    ],
+    "goodWords":[
+        "akıllı",
+        "zeki",
+        "akıllı"
+    ]
+}

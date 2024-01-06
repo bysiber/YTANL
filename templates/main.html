@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Modern Chat Interface</title>
+</head>
+<body>
+    <div class="container">
+        <div class="video-and-options-section">
+            <div class="video-section">
+                <!-- Sol tarafta video gösterilecek (burada video embed kodu olabilir) -->
+                <iframe id="iframeVideo" src="video_url_here" allowfullscreen></iframe>
+            </div>
+            <div class="options-section">
+                <!-- Ek Seçenekler -->
+                <ul>
+                    <li><a href="/analysis_panel" class="option-btn">Analysis Panel</a></li>
+                    <!-- İhtiyaca göre diğer seçenekler eklenebilir -->
+                </ul>
+            </div>
+        </div>
+        <div class="chat-section">
+            <div class="input-section">
+                <!-- Üstteki inputlar -->
+                <input type="text" id="videoLinkInput" placeholder="Enter YouTube Video Link">
+                <button onclick="getChatData()">Get Chat Data</button>
+            </div>
+            <div class="chat-box">
+                <!-- Chat mesajlarının gösterileceği kısım -->
+                <div id="chatMessages"></div>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/main/index.js') }}"></script>
+</body>
+</html>

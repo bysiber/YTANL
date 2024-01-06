@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/analysis_panel.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/authors.css') }}">
+    <title>Modern Chat Interface</title>
+</head>
+<body>
+    <div class="analysis-panel">
+        <div class="left-panel">
+            <div class="bot-options">
+                <button class="option">Frequency Analysis</button>
+                <button class="option">Language Analysis</button>
+                <!-- Add more options as needed -->
+            </div>
+        </div>
+        <div class="right-panel">
+            <!-- Contents will be populated based on selected options -->
+        </div>
+    </div>
+    
+    <!-- Pop-up Box for Frequency Analysis -->
+    <div class="popup" id="frequencyPopup">
+        <h2>Frequency Analysis Options</h2>
+        <div class="sub-options">
+            <label><input type="checkbox" value="most_active_authors">Most Active Authors</label>
+            <label><input type="checkbox" value="time_spent_authors">Time Spent Authors</label>
+            <label><input type="checkbox" value="most_repeating_words">Most Repeating Words</label>
+            
+            <!-- Add more sub-options -->
+        </div>
+        <button class="analyze-btn">Analyze Now</button>
+        <button class="close-btn">Close</button>
+    </div>
+    <a href= "/main" class="back-btn">Go Back</a>
+    <script type="module" src="{{ url_for('static', filename='js/analysis_panel/index.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>

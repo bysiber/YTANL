@@ -1,0 +1,181 @@
+/* Global stil */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3f3f3;
+    color: #333;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    align-items: stretch;
+    
+}
+
+
+.video-section {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.video-section iframe {
+    width: 600px; /* Örnek bir genişlik */
+    height: 300px; /* Örnek bir yükseklik */
+    border: none;
+    border-radius: 8px; /* Kenarları yuvarla */
+}
+
+
+.chat-section {
+    flex: 1;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* Yatay kaydırma çubuğunu etkinleştir */
+    height: calc(110vh - 100px); /* Örnek bir yükseklik, ihtiyaçlarınıza göre ayarlayın */
+}
+
+.input-section {
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+}
+
+.input-section input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.input-section button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chat-box {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #fff;
+}
+
+/* Yeni buton stili */
+.message-expand-button {
+    background: transparent;
+    color: #3498db;
+    border: 2px solid #3498db;
+    border-radius: 20px;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 5px; /* Butonlar arasında boşluk bırak */
+    float: left; /* Butonları sola al */
+    /* clear: left;  Bu satırı kaldırın */
+}
+
+.message-expand-button:hover {
+    background: #3498db;
+    color: #fff;
+}
+
+
+.message-skip-button {
+    background: transparent;
+    color: #37b427;
+    border: 2px solid #37b427;
+    border-radius: 20px;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 5px; /* Butonlar arasında boşluk bırak */
+    float: left; /* Butonları sola al */
+    clear: left; /* Her yeni satırda başlat */
+}
+
+.message-skip-button:hover {
+    background: #37b427;
+    color: #fff;
+}
+
+
+
+/* Mesaj kutusu stili */
+.message-box {
+    background: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+
+.options-section {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-align: center; /* Seçenekleri merkezi hizala */
+}
+
+
+
+.options-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.options-section ul li {
+    margin-bottom: 10px;
+}
+
+.options-section ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.options-section ul li a:hover {
+    color: #3498db;
+}
+
+
+.video-and-options-section {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-right: 20px;
+}
+
+
+
+.option-btn {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff; /* This is the text color, set to white */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.option-btn:hover {
+    background-color: #2980b9;
+}
